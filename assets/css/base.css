@@ -3,4 +3,10 @@
     --main_text:#333333;
     --secondary_background:#FFFFFF;
     --color-button:#4CAF50;
+    --title-font: playfair display;
+    --text-font:poppins;
+}
+
+h1{
+    font-family: var(--text---font);
 }
