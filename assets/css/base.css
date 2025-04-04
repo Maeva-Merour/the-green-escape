@@ -3,17 +3,29 @@
 }
 :root{
     --main_background:#F5F5DC ;
-    --main_text:#333333;
+    --main_text_color:#333333;
     --secondary_background:#FFFFFF;
     --color-button:#4CAF50;
+    --color-title:#4CAF50;
     --title-font: playfair display;
     --text-font:poppins;
 }
 
+main{
+    background-color: var(--main_background);
+}
+
 h1{
     font-family: var(--text---font);
+    color: var(--color-title);
+}
+
+ul ol a{
+    font-family: var(--text---font);
+    color: var(--color-title);
 }
 
 p{
     font-family: var(--text---font);
+    color: var(--main_text_color);
 }
