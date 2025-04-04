@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
 }
+
 :root{
     --main_background:#F5F5DC ;
     --main_text_color:#333333;
@@ -9,6 +10,18 @@
     --color-title:#4CAF50;
     --title-font: playfair display;
     --text-font:poppins;
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    
+}
+
+@media screen and (min-width: 769) and (max-width: 1024px) {
+    
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1024px){
+    
 }
 
 main{
