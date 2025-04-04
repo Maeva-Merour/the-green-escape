@@ -44,6 +44,8 @@ header nav li{
 header nav li:hover{
     transform: translateY(-2px);
     transition: 0.3s ease-out;
+    text-shadow: 0.5px 0.5px 0.5px rgb(97, 97, 97);
+    text-decoration: underline;
 }
 
 header nav a{
@@ -54,4 +56,102 @@ header nav a{
     color:var(--main-text);
 }
 
+footer{
+    margin: auto;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 3px 0px 5px 0px #b3b2b2;
+    font-family: var(--text-font);
+    font-size:0.7rem;
+}
 
+.social-media{
+    height: auto;
+    width: 20%;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.plateformes img{
+    height: auto;
+    width: 12%;
+    padding: 10px;
+}
+
+.plateformes a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-compagny-social img{
+    height: auto;
+    width: 13%;
+    padding: 0 0 6px 0;
+    justify-items: center;
+    border-bottom: solid 1px black;
+}
+
+.compagny-contact{
+    height: auto;
+    width: 20%;
+    align-items: center;
+    vertical-align: middle;
+    text-align: justify;
+}
+
+.compagny-contact h3,p{
+    padding-bottom: 3px;
+}
+
+.compagny-contact h3{
+    font-weight: 550;
+}
+
+.compagny-contact p{
+    padding-top: 3px;
+}
+
+.adding-informations{
+    height: auto;
+    width: 20%;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.adding-informations h3{
+    font-weight: 550;
+    padding-bottom: 10px;
+}
+
+.adding-informations li a{
+    padding-top: 3px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+.adding-informations li a:hover{
+    transform: translateY(-2px);
+    transition: 0.3s ease-out;
+    text-shadow: 0.5px 0.5px 0.5px rgb(97, 97, 97);
+}
+
+.copyright{
+    height: auto;
+    width: 100%;
+    padding: 30px 0 0 0;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 0.6rem;
+}
