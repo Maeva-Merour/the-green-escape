@@ -1,1 +1,227 @@
-/*Mise en forme des sections de la page*/
+.hero-picture-title img{
+    width: 100%;
+    height: 65vh;
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    display: flex;
+    overflow: hidden; /* Cache les parties de l'image qui dépassent */
+    object-fit: cover; /* L'image remplit toute la zone sans se déformer */
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+}
+
+.hero-picture-title h2{
+    padding:0 0 0 30px;
+    position: absolute;
+    display: flex;
+    top: 35vh; 
+    left: 4vw;
+    color: var(--contrast);
+    font-family: var(--title-font);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-shadow: 0px 0px 10px var(--contrast);
+}
+
+h2 span{
+    position: absolute;
+    font-style: italic;
+    font-size: 4rem;
+    top: 0vh; 
+    left: 15vw;
+}
+
+p span{
+    font-style: italic;
+    display: inline-block;
+    transition: transform 0.3s ease, left 0.3s ease;
+    transform-origin: left center;
+    font-size: 1.2rem;
+    text-shadow: 0px 0px 10px var(--contrast);
+}
+
+p span:hover{
+    transform: scale(1.2);
+}
+
+.compagny-brief{
+    position: absolute;
+    display:contents;
+}
+
+.compagny-brief p{
+    padding:20px 0 0 30px;
+    position: absolute;
+    top: 55vh; 
+    left: 4vw;
+    color: var(--contrast);
+    font-family: var(--text-font);
+    font-size: 1rem;
+    white-space: pre-line;
+    line-height: 1.8;
+}
+
+.green-zoom a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.green-zoom p{
+    padding:0 0 0 30px;
+    position: absolute;
+    top: 48vh; 
+    left: 4vw;
+    font-style: italic;
+    color: var(--contrast);
+    font-family: var(--text-font);
+    font-size: 1rem;
+}
+
+.contact-us-home{
+    padding:0 0 0 30px;
+    position: absolute;
+    top: 70vh; 
+    left: 35vw;
+    font-family: var(--text-font);
+    text-shadow: 0px 0px 10px var(--contrast);
+    font-size: 1.2rem;
+}
+
+.contact-us-home p{
+    color: var(--contrast);
+
+}
+
+.contact-us-home a{
+    text-decoration: none;
+    color: inherit;
+    color: var(--contrast);
+}
+
+.contact-us-home span{
+    font-weight: 500;
+}
+
+.btn-style {
+    border: 0;
+    line-height: 1.8;
+    padding: 0 20px;
+    font-size: 1rem;
+    width:9vw;
+    height:5vh;
+    position: absolute;
+    top: 5vh; 
+    left: 5vw;
+    text-align: center;
+    color:var(--contrast);
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: var(--color-button);
+    box-shadow:inset 2px 2px 3px rgb(255 255 255 / 60%), inset -2px -2px 3px rgb(0 0 0 / 60%);
+}
+      
+.btn-style:hover, .home-preview:hover {
+    background-color:var(--color-deeper-button);
+}
+
+.btn-style:active, .home-preview:active {
+    box-shadow:inset -2px -2px 3px rgb(255 255 255 / 60%), inset 2px 2px 3px rgb(0 0 0 / 60%);
+}
+
+.hebergements-visual {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    transform: translate(5%, 10%);
+    z-index: 1;  /* Place les images au-dessus du fond */
+    padding-bottom: 8%;
+}
+  
+.hebergements-visual img {
+    width: 15%;
+    height: auto;
+    padding-top: 30px;
+    object-fit: cover;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+.hebergements-visual img:hover {
+    transform: scale(1.01);
+    transition: 0.3s ease-out;
+    box-shadow: 0px 0px 10px 5px #00000059;
+}
+
+.home-gallery a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.home-preview {
+    border: 0;
+    line-height: 1.8;
+    padding: 0 20px;
+    font-size: 1rem;
+    width:9vw;
+    height:10vh;
+    position: absolute;
+    top: 13vh; 
+    left: 70vw;
+    text-align: center;
+    color:var(--contrast);
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: var(--color-button);
+    box-shadow:inset 2px 2px 3px rgb(255 255 255 / 60%), inset -2px -2px 3px rgb(0 0 0 / 60%);
+}
+
+.home-preview:hover{
+    transform: scale(1.1);
+}
+
+.avis-groupe {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .avis_seul {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    margin: 10px 0;
+  }
+  
+  .avis-groupe p {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .avis-groupe {
+    animation: slide 12s infinite;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(-200%);
+    }
+    75% {
+      transform: translateX(-300%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }

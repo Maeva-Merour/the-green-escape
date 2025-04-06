@@ -6,14 +6,16 @@
     --main_background:#F5F5DC ;
     --main_text_color:#333333;
     --secondary_background:#FFFFFF;
-    --color-button:#4CAF50;
+    --contrast:#FFFFFF;
+    --color-button:#4caf4fe1;
+    --color-deeper-button:#2e6330;
     --color-title:#4CAF50;
     --title-font: playfair display;
     --text-font:poppins;
 }
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
-    
+
 }
 
 @media screen and (min-width: 769) and (max-width: 1024px) {
@@ -29,6 +31,11 @@ main{
 }
 
 h1{
+    font-family: var(--text---font);
+    color: var(--color-title);
+}
+
+h2{
     font-family: var(--text---font);
     color: var(--color-title);
 }

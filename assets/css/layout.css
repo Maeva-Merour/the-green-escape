@@ -1,12 +1,13 @@
 header{
-    margin: auto;
+    margin:0;
     width: 100%;
+    max-width: 100%;
     padding: 30px;
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0px 3px 5px 0px #b3b2b2;
+    box-shadow: 0px 3px 5px 2px #00000077;
     background: url("./../images/banner_green_bkg.png") center center / cover no-repeat;
 }
 
@@ -77,7 +78,7 @@ footer{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 3px 0px 5px 0px #b3b2b2;
+    box-shadow: 5px 0px 5px 2px #00000077;
     font-family: var(--text-font);
     font-size:0.7rem;
     background: url("./../images/banner_green_bkg.png") center center / cover no-repeat;
