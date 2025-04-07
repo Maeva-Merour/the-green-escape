@@ -1,3 +1,30 @@
 .valeurs ul{
     list-style: inside;
 }
+
+.flex-valeurs{
+    display: flex;
+    justify-content: space-around;
+}
+
+.who-we-are{
+    color: var(--main_text_color);
+    font-family: var(--text---font);
+}
+
+.valeurs{
+    font-family: var(--text---font);
+    color: var(--main_text_color);
+    width: 50%;
+}
+
+
+.team img{
+    width: 60%;
+    max-width: 100%;
+    padding: 10 10 10 10px;
+    object-fit: cover;
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    box-shadow: inset 2px 2px 3px rgb(255 255 255 / 60%), inset -2px -2px 3px rgb(0 0 0 / 60%);
+    border-radius: 5px;
+}

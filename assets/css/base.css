@@ -14,18 +14,6 @@
     --text-font:poppins;
 }
 
-@media screen and (min-width: 375px) and (max-width: 768px) {
-
-}
-
-@media screen and (min-width: 769) and (max-width: 1024px) {
-    
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1024px){
-    
-}
-
 main{
     background-color: var(--main_background);
 }
