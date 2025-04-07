@@ -31,6 +31,10 @@
     <link rel="stylesheet" href="./../assets/css/reset.css">
     <link rel="stylesheet" href="./../assets/css/base.css">
     <link rel="stylesheet" href="./../assets/css/layout.css">
+    <link rel="stylesheet" href="./../assets/css/home.css">   
+    <link rel="stylesheet" href="./../assets/css/contact.css">
+    <link rel="stylesheet" href="./../assets/css/herbegements.css">
+    <link rel="stylesheet" href="./../assets/css/a-propos.css">
 
     <!-- Liens fonts web-->
     <!--Playfair Display-->
@@ -76,7 +80,59 @@
         </header>
 
     <main>
+        <section class="formulaire">
+            <form action="form.php" method="post" class="form-container" id="form" enctype="multipart/form-data">
 
+                <div class="div-container">
+                    <label for="Name">Nom:</label>
+                    <input type="text" id="Name" required placeholder="Votre Nom">
+        
+                    <label for="Surname">Prénom:</label>
+                    <input type="text" id="Surname" required placeholder="Votre Prénom">
+                </div>
+
+                <div class="div-container">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required placeholder="Entrez votre adresse email">
+                </div>
+
+                <div>
+                    <label for="Surname">Sujet:</label>
+                    <input type="text" id="Surname" required placeholder="Sujet">
+                </div>
+
+                <div class="container-message">
+                    <label for="add-request">Votre message:</label>
+                    <textarea id="add-request" name="add-request" rows="5" cols="33"
+                    placeholder="Tapez votre texte ici"></textarea>
+                </div>
+
+                <div class="div-container">
+                    <label for="submit" id="submit"></label>
+                    <button type="submit" class="submit-button">Soumettre</button>
+                </div>
+
+              </form>
+        </section>
+
+        <section class="coordonnees">
+            <div class="compagny-contact">
+                <h3>The Green Escape Compagny</h3>
+                <p>1200 avenue de l'Edelweiss</p>
+                <p>74512 GAIA - FRANCE</p>
+                <p>+33 (0)1 56 47 89 20</p>
+                <p>contact@greenescape.fr</p>
+            </div>
+
+            <div class="maps">
+                <p>Nous sommes implantés dans un domaine forestier de 12 hectares à proximité de Brantôme, en
+                    Dordogne. Chaque hébergement est isolé visuellement des autres pour garantir intimité et silence
+                    absolu.
+                </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3383.97063442669!2d0.9561842500154094!3d44.50350203649484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ab722a4dbe9e1f%3A0x40665174815b560!2s47500%20Fumel!5e0!3m2!1sfr!2sfr!4v1744013074529!5m2!1sfr!2sfr" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+            </div>
+        </section>
     </main>
     
     <footer>
