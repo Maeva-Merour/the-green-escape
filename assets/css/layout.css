@@ -7,7 +7,6 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 50%;
     box-shadow: 0px 3px 5px 2px #00000077;
     background: url("./../images/banner_green_bkg.png") center center / cover no-repeat;
 }
@@ -16,45 +15,40 @@ header{
     width: 100%;
 }
 
-.logo-slogan h1{
-    width: 100%;
-}
-
 .logo-header{
     height: auto;
-    width: 10vw;
+    width: 15vw;
     align-items: center;
     text-align: center;
     text-decoration: none;
     color: inherit;
 }
 
-header h1{
-    padding: 0 0 0 0.5vw;
+.titre-header-logo{
+    width: 100%;
+    padding: 0 0 0 1vw;
     -webkit-text-stroke: 0.2px #3f7541;
     font-size: 1rem;
 }
 
-header nav{
+.nav-main{
     height: auto;
     width: 70%;
     padding: 0 20px 0 0;
-    align-items: center;
-    vertical-align: middle;
     text-align: center;
 }
 
-header nav ul{
+.nav-main ul{
     display: flex;
     justify-content: space-between;
 }
 
-header nav li{
-    padding: 10px;
+.nav-main li{
+    padding: 20px;
     text-decoration-color: transparent;
 }
 
-header nav li:hover{
+.nav-main li:hover{
     transform: translateY(-2px);
     transition: 0.2s ease-in-out;
     text-shadow: 0.5px 0.5px 0.5px rgb(97, 97, 97);
@@ -64,16 +58,15 @@ header nav li:hover{
     text-underline-offset: 4px;
 }
 
-header nav a{
+.nav-main a{
     font-family:var(--text-font);
     font-weight:500;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-decoration: none;
     color:#1d6120;
     -webkit-text-stroke: 0.2px #264b275d;
     text-shadow: 0px 0.5px 0px rgba(49, 151, 74, 0.527);
     white-space: nowrap;
-
 }
 
 footer{
@@ -96,8 +89,6 @@ footer{
 .social-media{
     height: auto;
     width: 8%;
-    align-items: center;
-    vertical-align: middle;
     text-align: center;
 }
 
@@ -137,8 +128,6 @@ footer{
     width: 20%;
     padding: 0 0 0 10px;
     font-size: 0.9rem;
-    align-items: center;
-    vertical-align: middle;
     text-align: justify;
     font-family: var(--text-font);
 }
@@ -160,8 +149,6 @@ footer{
     width: 20%;
     padding: 0 10px 0 0;
     font-size: 0.9rem;
-    align-items: center;
-    vertical-align: middle;
     text-align: center;
 }
 
@@ -189,8 +176,22 @@ footer{
     height: auto;
     width: 100%;
     padding: 30px 0 0 0;
-    align-items: center;
-    vertical-align: middle;
     text-align: center;
     font-size: 0.8rem;
+}
+
+@media screen and (max-width: 1440px){
+
+    .burger-menu{
+        display: none;
+    }
+
+    .social-media{
+        height: auto;
+        width: 12%;
+    }
+}
+
+@media screen and (max-width: px){
+
 }
