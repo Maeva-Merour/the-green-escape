@@ -3,13 +3,16 @@
 }
 
 :root{
+    /*Colors*/
     --main_background:#F5F5DC ;
-    --main_text_color:#333333;
     --secondary_background:#FFFFFF;
+    --main_text_color:#333333;
     --contrast:#FFFFFF;
     --color-button:#4caf4fe1;
     --color-deeper-button:#2e6330;
     --color-title:#4CAF50;
+
+    /*Fonts*/
     --title-font: playfair display;
     --text-font:poppins;
 }

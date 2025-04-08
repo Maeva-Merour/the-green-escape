@@ -9,8 +9,8 @@
 }
 
 .div-container {
-    margin-bottom: 15px;
     display: flex;
+    margin-bottom: 15px;
 }
 
 .container-message {
@@ -23,17 +23,16 @@
 }
 
 iframe {
-
     position: static;  /* Assure que l'iframe reste dans le flux normal du document */
     pointer-events: none; /*empêche de se déplacer dans la carte*/
 }
 
 .compagny-contact{
-    height: auto;
     width: 20%;
+    height: auto;
     padding: 0 0 0 10px;
-    text-align: justify;
     font-family: var(--text-font);
+    text-align: justify;
 }
 
 .compagny-contact h3,p{

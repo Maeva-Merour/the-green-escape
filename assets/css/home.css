@@ -17,11 +17,10 @@
 }
 
 .hero-picture-title h2 {
-    padding: 0 0 0 30px;
     position: absolute;
-    display: flex;
     top: 10vh;
     left: 4vw;
+    padding: 0 0 0 30px;
     color: var(--contrast);
     font-family: var(--title-font);
     font-size: 1.5rem;
@@ -30,20 +29,20 @@
 }
 
 h2 span {
-    font-style: italic;
     position: relative;
-    font-size: 3rem;
     top: 8vh;
     left: 14vw;
+    font-size: 3rem;
+    font-style: italic;
 }
 
 p span {
-    font-style: italic;
     display: inline-block;
+    font-size: 1.2rem;
+    font-style: italic;
+    text-shadow: 0px 0px 10px var(--contrast);
     transition: transform 0.3s ease, left 0.3s ease;
     transform-origin: left center;
-    font-size: 1.2rem;
-    text-shadow: 0px 0px 10px var(--contrast);
 }
 
 p span:hover {
@@ -58,7 +57,6 @@ p span:hover {
 
 .compagny-brief span{
     text-decoration: none;
-    color: inherit;
     color: var(--contrast);
 }
 
@@ -67,15 +65,15 @@ p span:hover {
     color: var(--contrast);
     font-family: var(--text-font);
     font-size: 1rem;
-    white-space: pre-line;
     line-height: 1.8;
+    white-space: pre-line;
 }
 
 .contact-us-home {
-    padding: 0 0 0 30px;
     position: absolute;
     top: 60vh;
     left: 35vw;
+    padding: 0 0 0 30px;
     font-family: var(--text-font);
     text-shadow: 0px 0px 10px var(--contrast);
     font-size: 1.2rem;
@@ -88,7 +86,6 @@ p span:hover {
 
 .contact-us-home a {
     text-decoration: none;
-    color: inherit;
     color: var(--contrast);
 }
 
@@ -97,24 +94,24 @@ p span:hover {
 }
 
 .btn-style {
-    border: 0;
-    padding: 10px 20px;
-    margin-top: 20px;
-    text-decoration: none;
-    color: inherit;
-    font-family: var(--text-font);
-    font-size: 0.8rem;
-    width: 200px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    color: var(--contrast);
-    text-shadow: 1px 1px 1px #000;
+    width: 200px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 0;
     border-radius: 10px;
     background-color: var(--color-button);
     box-shadow: inset 2px 2px 3px rgb(255 255 255 / 60%), inset -2px -2px 3px rgb(0 0 0 / 60%);
+    color: var(--contrast);
+    font-family: var(--text-font);
+    font-size: 0.8rem;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #000;
 }
+    
 
 .btn-style:hover,
 .home-preview:hover {
@@ -131,8 +128,6 @@ p span:hover {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    z-index: 1;
-    /* Place les images au-dessus du fond */
     padding-bottom: 5%;
 }
 
@@ -142,11 +137,11 @@ p span:hover {
     padding-top: 30px;
     object-fit: cover;
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    transition: 0.3s ease-out;
 }
 
 .hebergements-visual img:hover {
     transform: scale(1.01);
-    transition: 0.3s ease-out;
 }
 
 .home-gallery{
@@ -157,29 +152,29 @@ p span:hover {
 
 .home-gallery a {
     display: flex;
-    height: 100%;
     width: 30%;
-    text-decoration: none;
+    height: 100%;
     color: inherit;
+    text-decoration: none;
 }
 
 .home-preview {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    border: 0;
-    line-height: 1.2;
-    padding: 5px 20px;
-    font-size: 1rem;
     width: 15vw;
     height: 12vh;
     margin: 0 auto;
-    text-align: center;
-    color: var(--contrast);
-    text-shadow: 1px 1px 1px #000;
+    padding: 5px 20px;
+    border: 0;
     border-radius: 10px;
     background-color: var(--color-button);
     box-shadow: inset 2px 2px 3px rgb(255 255 255 / 60%), inset -2px -2px 3px rgb(0 0 0 / 60%);
+    color: var(--contrast);
+    font-size: 1rem;
+    line-height: 1.2;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000;    
 }
 
 .home-preview:hover {
@@ -187,22 +182,22 @@ p span:hover {
 }
 
 .avis-groupe {
-    width: 100%;
-    padding: 0 0 50px 0;
-    overflow: hidden;
-    position: relative;
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    padding: 0 0 50px 0;
     font-family: var(--text-font);
+    overflow: hidden;
+    position: relative;
 }
 
 .avis_seul {
     width: 100%;
-    padding: 20px;
-    text-align: center;
-    box-sizing: border-box;
-    border-radius: 10px;
     margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 .avis_seul p{
@@ -214,12 +209,11 @@ p span:hover {
   }
 
 .burger-menu{
-    text-decoration: none;
-    color: inherit;
+    display: none;
+    width: 0%;
     color: var(--color-deeper-button);
     font-size: 2rem;
-    width: 0%;
-    display: none;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 1440px){
@@ -227,7 +221,6 @@ p span:hover {
     .compagny-brief{
         top: 200px;
     }
-
 }
 
 
@@ -242,8 +235,8 @@ p span:hover {
     }
 
     .home-gallery img, .home-preview{
-        flex-wrap: wrap;
         flex-basis: 80%;
+        flex-wrap: wrap;
     }
 }
 
