@@ -1,29 +1,78 @@
-.valeurs{
-    width: 50%;
-    color: var(--main_text_color);
-    font-family: var(--text---font);
-}
-
-.valeurs ul{
-    list-style: inside;
+.about{
+    position: relative;
 }
 
 .flex-valeurs{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 50px;
+    gap: 200px;
 }
 
-.who-we-are{
-    color: var(--main_text_color);
-    font-family: var(--text---font);
-}
-
-.team img{
-    width: 60%;
+.team{
+    width: 30%;
+    height: auto;
     max-width: 100%;
-    padding: 10 10 10 10px;
-    border: 1px solid rgba(0, 0, 0, 0.137);
-    border-radius: 5px;
-    box-shadow: inset 2px 2px 3px rgb(255 255 255 / 60%), inset -2px -2px 3px rgb(0 0 0 / 60%);
+    display: flex;
+    overflow: hidden;
     object-fit: cover;
+    border-radius: 40px;
 }
+.about h2 {
+    padding: 0 0 40px 0;
+    color: var(--color-title);
+    font-family: var(--title-font);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-shadow: 0 0 100px #ffffff57, 2px 2px 5px rgba(0,0,0,0);
+}
+
+.who-we-are p, li {
+    color: var(--main_text_color);
+    font-family: var(--text-font);
+    font-size: 1rem;
+    line-height: 3;
+    white-space: pre-line;
+}
+
+.valeurs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 30px 0 80px 0;
+}
+
+.valeurs li {
+    position: relative;
+    padding-left: 60px;
+  }
+
+.valeurs li::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 34px;
+    height: 34px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+.valeurs li.nature::before {
+    background-image: url('./../images/about/nature_icone.png');
+  }
+
+.valeurs li.deconnexion::before {
+    background-image: url('./../images/about/deconnect_icone.png');
+  }
+
+.valeurs li.confort::before {
+    background-image: url('./../images/about/confort.png');
+  }
+
+.valeurs li.unique::before {
+    background-image: url('./../images/about/xp_unique.png');
+  }
+
