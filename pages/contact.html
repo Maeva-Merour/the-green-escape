@@ -84,13 +84,16 @@
     </header>
 
     <main>
-        <section class="formulaire">
-            <form action="form.php" method="post" class="form-container" id="form" enctype="multipart/form-data">
+        <section class="contact-us">
 
+        <div class="form-flex">
+            <div class="formulaire">
+            <form action="form" method="post" class="form-container" id="form" enctype="multipart/form-data">
                 <div class="div-container">
                     <label for="Name">Nom:</label>
                     <input type="text" id="Name" required placeholder="Votre Nom">
-        
+                </div>  
+                <div class="div-container">
                     <label for="Surname">Prénom:</label>
                     <input type="text" id="Surname" required placeholder="Votre Prénom">
                 </div>
@@ -100,26 +103,23 @@
                     <input type="email" id="email" required placeholder="Entrez votre adresse email">
                 </div>
 
-                <div>
+                <div class="div-container">
                     <label for="Surname">Sujet:</label>
                     <input type="text" id="Surname" required placeholder="Sujet">
                 </div>
 
-                <div class="container-message">
+                <div class="div-container">
                     <label for="add-request">Votre message:</label>
                     <textarea id="add-request" name="add-request" rows="5" cols="33"
                     placeholder="Tapez votre texte ici"></textarea>
                 </div>
 
-                <div class="div-container">
+                <div class="container-message">
                     <label for="submit" id="submit"></label>
                     <button type="submit" class="submit-button">Soumettre</button>
                 </div>
-
               </form>
-        </section>
-
-        <section class="coordonnees">
+            </div>
             <div class="compagny-contact">
                 <h3>The Green Escape Compagny</h3>
                 <p>1200 avenue de l'Edelweiss</p>
@@ -127,16 +127,25 @@
                 <p>+33 (0)1 56 47 89 20</p>
                 <p>contact@greenescape.fr</p>
             </div>
+        </div>
 
+
+            <div class="where-flex">
             <div class="maps">
-                <p>Nous sommes implantés dans un domaine forestier de 12 hectares à proximité de Brantôme, en
-                    Dordogne. Chaque hébergement est isolé visuellement des autres pour garantir intimité et silence
-                    absolu.
-                </p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3383.97063442669!2d0.9561842500154094!3d44.50350203649484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ab722a4dbe9e1f%3A0x40665174815b560!2s47500%20Fumel!5e0!3m2!1sfr!2sfr!4v1744013074529!5m2!1sfr!2sfr" 
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
             </div>
+
+            <div class="domaine-forest">
+                <p>Nous sommes implantés dans un domaine forestier de 12 hectares à proximité de Brantôme, en
+                    Dordogne. <br><span class="isole">Chaque hébergement est isolé visuellement des autres pour garantir intimité et silence
+                    absolu.</span>
+                </p>
+            </div>
+            </div>
+
         </section>
+
     </main>
     
     <footer>

@@ -1,38 +1,60 @@
+.contact-us{
+    font-family: var(--text-font);
+    color: var(--main_text_color);
+}
+
 .formulaire {
-    width: 30%;
-    margin: 0 auto;
+    max-width: 100%;
     border: 1px solid #00000036;
     border-radius: 15px; 
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.8);
-    font-family: var(--text-font);
-    color: var(--main_text_color);
-}
-
-.div-container {
     display: flex;
-    margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.container-message {
-    margin-bottom: 15px;
+.formulaire input {
+    flex: 1;
+    max-width: 300px;
+    min-width: 150px;
+    box-sizing: border-box;
 }
 
-.maps{
+.submit-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 10px;
+    background-color: var(--color-button);
+    box-shadow: inset 2px 2px 3px rgb(255 255 255 / 60%), inset -2px -2px 3px rgb(0 0 0 / 60%);
+    color: var(--contrast);
     font-family: var(--text-font);
-    color: var(--main_text_color);
+    font-size: 0.8rem;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #000;
 }
 
 iframe {
+    width: 500px;
+    height: 400px;
     position: static;  /* Assure que l'iframe reste dans le flux normal du document */
     pointer-events: none; /*empêche de se déplacer dans la carte*/
+    border-radius: 40px;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.8);
 }
 
 .compagny-contact{
     width: 20%;
-    height: auto;
-    padding: 0 0 0 10px;
+    height: 200px;
     font-family: var(--text-font);
-    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 .compagny-contact h3,p{
@@ -41,8 +63,51 @@ iframe {
 
 .compagny-contact h3{
     font-weight: 550;
+    padding-bottom: 20px;
 }
 
 .compagny-contact p{
     padding-top: 3px;
+}
+
+.form-flex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 50px;
+    gap: 200px;
+}
+
+.where-flex{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 50px;
+}
+
+.domaine-forest{
+    display: flex;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.isole{
+    font-weight: bolder;
+}
+
+.div-container{
+    padding: 20px 20px 10px 20px;
+    display: flex;
+    flex-direction: column;    
+}
+
+.div-container label{
+    padding: 0px 0 5px 0px; 
+}
+
+.container-message {
+    margin-bottom: 15px;
+    padding: 20px 20px 10px 20px;
 }

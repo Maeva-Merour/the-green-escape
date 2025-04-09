@@ -25,7 +25,7 @@
     font-family: var(--title-font);
     font-size: 1.5rem;
     font-weight: 600;
-    text-shadow: 0 0 100px #ffffff57, 2px 2px 5px rgba(0,0,0,0);
+    font-weight: bolder;
 }
 
 .who-we-are p, li {
@@ -33,7 +33,6 @@
     font-family: var(--text-font);
     font-size: 1rem;
     line-height: 3;
-    white-space: pre-line;
 }
 
 .valeurs{
@@ -42,6 +41,10 @@
     align-items: center;
     list-style: none;
     padding: 30px 0 80px 0;
+}
+
+.valeurs span{
+    font-weight: bold;
 }
 
 .valeurs li {
